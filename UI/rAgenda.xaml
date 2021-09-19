@@ -1,0 +1,24 @@
+﻿<Window x:Class="Asignacion3.UI.rAgenda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asignacion3.UI"
+        mc:Ignorable="d"
+        Title="Agenda" Height="336" Width="344" Background="#FF05CED1" Icon="/Resources/icono.icon.png">
+    <Grid>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="62,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefono" HorizontalAlignment="Left" Margin="62,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextNombre" HorizontalAlignment="Left" Margin="121,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="TextTelefono" HorizontalAlignment="Left" Margin="121,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Button  HorizontalAlignment="Center" Margin="0,85,0,0" VerticalAlignment="Top" Click="BtnGuardar">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Resources/Guardar.png" Height="20" Width="27" />
+                <Label Content="Guardar" Margin="-3,0,0,0" Width="52"/>
+            </StackPanel>
+
+        </Button>
+        <DataGrid x:Name="ListaGri" Margin="0,171,0,0" Background="#FFE5E5E5"/>
+
+    </Grid>
+</Window>
